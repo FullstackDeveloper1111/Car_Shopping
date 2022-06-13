@@ -10,11 +10,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Mercedez-Benz car online shopping</title>
 </head>
 
-<body>
+<body style="overflow-x: hidden;">
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
             <div class="container">
@@ -25,103 +25,71 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                    <ul class="navbar-nav text-center">
+                    <ul class="navbar-nav text-center fs-5 fw-normal">
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html">Bosh sahifa</a>
+                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" id="about" href="#">Biz haqimizda</a>
+                            <a class="nav-link active" id="about" href="about.html">About Us</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="cars.html">Mashinalar</a>
+                            <a class="nav-link" href="cars.html">Cars</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Aloqa</a>
+                            <a class="nav-link" href="contact.html">Contact</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link text-dark"><i class="fa-solid fa-basket-shopping"></i></a>
+                            <a href="basket.html" class="nav-link text-dark"><i class="fa-solid fa-basket-shopping"></i></a>
                         </li>
                         <li class="nav-item">
                             <a href="#" class="nav-link text-danger"><i class="fa-solid fa-heart"></i></a>
                         </li>
                     </ul>
-                    <button type="button" class="btn btn-primary px-3 rounded-pill" data-bs-toggle="modal"
-                        data-bs-target="#exampleModal">
-                        Kirish
-                    </button>
+                    <a href="sign_in.html" class="btn btn-primary rounded-pill">Sign in</a>
                 </div>
             </div>
         </nav>
     </header>
 
     <section>
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Sign in</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <form action="">
-                            <div class="mb-3">
-                                <label for="Firstname" class="form-label">Username</label>
-                                <input type="text" class="form-control" id="Firstname" aria-describedby="emailHelp">
-                            </div>
-                            <div class="mb-3">
-                                <label for="Password" class="form-label">Password</label>
-                                <input type="password" class="form-control" id="Password" aria-describedby="emailHelp">
-                            </div>
-                            <a href="" class="text-decoration-none">
-                                <p class="">Sign up</p>
-                            </a>
-                        </form>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Save changes</button>
-                    </div>
-                </div>
-            </div>
-        </div>
     </section>
     <div class="container">
         <div class="row py-5">
             <div class="col-md-12 py-5">
-                <h1 class="text-center py-5">Biz haqimizda</h1>
+                <h1 class="text-center py-5">About Us</h1>
             </div>
             <div class="col-md-6 float-start">
                 <img src="./imags/about_us/about_us.jpg" alt="" width="100%" class="">
             </div>
             <div class="col-md-6 float-end">
-                <p style="text-align: justify;"><b>Mercedes-Benz</b> Germaniyaning <b>"Mercedes-Benz Group"</b>konserni
-                    tarkibiga
-                    kiruvchi premium-klass, yuk avtomobillari, avtobuslar va boshqa transport vositalari ishlab
-                    chiqaruvchi kompaniya. Dunyodagi eng taniqli avtomobil brendlaridan biri Mercedes-Benz
-                    shtab-kvartirasi Germaniyaning Baden-Vyurtemberg Shtuttgart shahrida joylashgan.Markaning nomi
-                    1926 yilda qabul qilingan ikki raqobatchi firma, Benz & Cie birlashishi natijasida. (Karl Benz
-                    tomonidan tashkil etilgan) va Daimler-Motoren-Gesellschaft (Gottlieb Daimler tomonidan tashkil
-                    etilgan), Daimler — Benz yagona konserniga. Tovar nomi Birlashgan kompaniyalarning ikkita eng
-                    muhim avtomobillaridan — Mercedes 1901 va Benz Patent-Motorwagen 1886dan tashkil
-                    topgan.Mercedes-Benz avtomobil ishlab chiqaruvchi kompaniyalar orasida ikkinchi o'rinni
-                    (Toyota-dan keyin) va dunyodagi barcha brendlar orasida sakkizinchi o'rinni egallagan
-                    Mercedes-Benz brendi 48,601 milliard dollarga baholandi. BrandZ ma'lumotlariga ko'ra, 2018 yilda
-                    Mark top 100 Most Valuable Global Brands ro'yxatiga kiritilgan bo'lib, u 46 milliard dollarlik
-                    eng qimmat brendlar orasida 25,684 o'rinni egallagan. Mercedes-Benz brendi 2019da 60,355
-                    milliard dollarga baholandi va shu bilan avtomobil ishlab chiqaruvchi kompaniyalar reytingida
-                    birinchi o'rinni egalladi .</p>
+                <p style="text-align: justify; font-size: 17px;"><b>Mercedes-Benz</b> of Germany <b>Mercedes-Benz Group </b> Concern
+                    content
+                    develop unwanted premium-class, trucks, buses and other vehicles
+                    manufacturing company. One of the most famous car brands in the world is Mercedes-Benz
+                    Headquartered in Baden-Württemberg, Stuttgart, Germany
+                    The two competing firms, adopted in 1926, resulted in the merger of Benz & Cie. (Karl Benz
+                    and Daimler-Motoren-Gesellschaft (founded by Gottlieb Daimler)
+                    Daimler - the only concern of Benz. The brand name is one of the two most common of the combined companies
+                    important cars - Mercedes 1901 and Benz Patent-Motorwagen 1886
+                    Mercedes-Benz is the second largest carmaker in the world
+                    (After Toyota) and ranked eighth among all brands in the world
+                    The Mercedes-Benz brand is valued at $ 48.601 billion. In 2018, according to BrandZ
+                    Mark is included in the list of Top 100 Most Valuable Global Brands, which is worth $ 46 billion
+                    ranked 25,684 among the most expensive brands. Mercedes-Benz brand 2019 60,355
+                    billion and is currently ranked among the most carmakers
+                    took first place.</p>
             </div>
-            <div class="col-md-12 my-5 py-5">
-                <iframe width="100%" height="444" src="https://www.youtube.com/embed/YNRmTfmwdd4"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-            </div>
+        </div>
+        <div class="col-md-12 my-5 py-5">
+            <iframe width="100%" height="444" src="https://www.youtube.com/embed/YNRmTfmwdd4"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
         </div>
     </div>
     <footer class="footer">
-        <div class="footer-bottom bg-dark fixed-bottom b-0 l-0">
-            <p class="text-center text-light">
+        <div class="footer-bottom bg-dark fixed-bottom b-0 l-0 ">
+            <p class="text-center text-light mt-3 fs-5">
                 Mercedez-Benz
             </p>
         </div>

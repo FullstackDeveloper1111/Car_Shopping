@@ -10,13 +10,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Mercedez-Benz car online shopping</title>
 </head>
 
 <body style="overflow-x: hidden;">
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm fixed-top">
             <div class="container">
                 <a class="navbar-brand text-light" href="#"><img src="imags/merc-logo/изображение-removebg-preview.png"
                         alt="" width="100"></a>
@@ -25,68 +25,44 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                    <ul class="navbar-nav text-center text-light">
+                    <ul class="navbar-nav text-center fs-5 fw-normal">
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="index.html">Bosh sahifa</a>
+                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" id="about" href="about.html">Biz haqimizda</a>
+                            <a class="nav-link" id="about" href="about.html">About Us</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">Mashinalar</a>
+                            <a class="nav-link active" href="cars.html">Cars</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Aloqa</a>
+                            <a class="nav-link" href="contact.html">Contact</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link text-dark"><i class="fa-solid fa-basket-shopping"></i></a>
+                            <a href="basket.html" class="nav-link text-dark"><i class="fa-solid fa-basket-shopping"></i></a>
                         </li>
                         <li class="nav-item">
                             <a href="#" class="nav-link text-danger"><i class="fa-solid fa-heart"></i></a>
                         </li>
-                        <!-- Button trigger modal -->
-
                     </ul>
-                    <button type="button" class="btn btn-primary px-3 rounded-pill" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        Kirish
-                    </button>
-
-                    <!-- Modal -->
-
+                    <a href="sign_in.html" class="btn btn-primary rounded-pill">Sign in</a>
                 </div>
             </div>
         </nav>
     </header>
     <section>
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Sign in</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <form action="">
-                            <div class="mb-3">
-                                <label for="Firstname" class="form-label">Username</label>
-                                <input type="text" class="form-control" id="Firstname" aria-describedby="emailHelp">
-                            </div>
-                            <div class="mb-3">
-                                <label for="Password" class="form-label">Password</label>
-                                <input type="password" class="form-control" id="Password" aria-describedby="emailHelp">
-                            </div>
-                            <a href="" class="text-decoration-none"><p class="">Sign up</p></a>
-                        </form>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Save changes</button>
-                    </div>
+    </section>
+    <div class="container mt-5 pt-5">
+        <form class="ms-4 float-end col-md-4 ">
+            <div class="input-group">
+                <input type="text" id="filter-card" class="form-control" placeholder="Search">
+                <div class="input-group-btn">
+                    <button class="btn btn-default" type="submit">
+                        <i class="fa-solid fa-magnifying-glass"></i>                
+                    </button>
                 </div>
             </div>
-        </div>
-    </section>
-    <div class="container-fluid mt-5 pt-5 w-100">
+        </form> 
         <div class="row mt-5">
             <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-2">
                 <div class="card">
@@ -94,7 +70,7 @@
                         <img src="./imags/cars_imag/1.png" alt="" width="100%" height="100%">
                     </div>
                     <div class="card-body">
-                        <h6 class=""><b>Model:</b> Mercedez-Benz CLA 45</h6>
+                        <h6 class="model"><b>Model:</b> Mercedez-Benz CLA 45</h6>
                         <h6 class="summa"><b>Price:</b> 50.000.000 USD</h6>
                         <h6 class="ReleaseDate"><b>Release Date:</b> 02/09/2020</h6>
                         <h6 class="colors"><b>Colors:</b> Black, White, Yellow, Grey</h6>
@@ -107,7 +83,7 @@
                         <img src="./imags/cars_imag/2.jpg" alt="" width="100%" height="100%">
                     </div>
                     <div class="card-body">
-                        <h6 class=""><b>Model:</b> Mercedez-Benz EQA 250</h6>
+                        <h6 class="model"><b>Model:</b> Mercedez-Benz EQA 250</h6>
                         <h6 class="summa"><b>Price:</b> 50.000.000 USD</h6>
                         <h6 class="ReleaseDate"><b>Release Date:</b> 02/09/2020</h6>
                         <h6 class="colors"><b>Colors:</b> Black, White, Yellow, Grey</h6>
@@ -120,7 +96,7 @@
                         <img src="./imags/cars_imag/3.jpg" alt="" width="100%" height="100%">
                     </div>
                     <div class="card-body">
-                        <h6 class=""><b>Model:</b> Mercedez-Benz V12</h6>
+                        <h6 class="model"><b>Model:</b> Mercedez-Benz V12</h6>
                         <h6 class="summa"><b>Price:</b> 50.000.000 USD</h6>
                         <h6 class="ReleaseDate"><b>Release Date:</b> 02/09/2020</h6>
                         <h6 class="colors"><b>Colors:</b> Black, White, Yellow, Grey</h6>
@@ -133,7 +109,7 @@
                         <img src="./imags/cars_imag/4.jpg" alt="" width="100%" height="100%">
                     </div>
                     <div class="card-body">
-                        <h6 class=""><b>Model:</b> Mercedez-Benz W223</h6>
+                        <h6 class="model"><b>Model:</b> Mercedez-Benz W223</h6>
                         <h6 class="summa"><b>Price:</b> 50.000.000 USD</h6>
                         <h6 class="ReleaseDate"><b>Release Date:</b> 02/09/2020</h6>
                         <h6 class="colors"><b>Colors:</b> Black, White, Yellow, Grey</h6>
@@ -146,7 +122,7 @@
                         <img src="./imags/cars_imag/4.jpg" alt="" width="100%" height="100%">
                     </div>
                     <div class="card-body">
-                        <h6 class=""><b>Model:</b> Mercedez-Benz W223</h6>
+                        <h6 class="model"><b>Model:</b> Mercedez-Benz W223</h6>
                         <h6 class="summa"><b>Price:</b> 50.000.000 USD</h6>
                         <h6 class="ReleaseDate"><b>Release Date:</b> 02/09/2020</h6>
                         <h6 class="colors"><b>Colors:</b> Black, White, Yellow, Grey</h6>
@@ -159,7 +135,7 @@
                         <img src="./imags/cars_imag/3.jpg" alt="" width="100%" height="100%">
                     </div>
                     <div class="card-body">
-                        <h6 class=""><b>Model:</b> Mercedez-Benz V12</h6>
+                        <h6 class="model"><b>Model:</b> Mercedez-Benz V12</h6>
                         <h6 class="summa"><b>Price:</b> 50.000.000 USD</h6>
                         <h6 class="ReleaseDate"><b>Release Date:</b> 02/09/2020</h6>
                         <h6 class="colors"><b>Colors:</b> Black, White, Yellow, Grey</h6>
@@ -172,7 +148,7 @@
                         <img src="./imags/cars_imag/1.png" alt="" width="100%" height="100%">
                     </div>
                     <div class="card-body">
-                        <h6 class=""><b>Model:</b> Mercedez-Benz CLA 45</h6>
+                        <h6 class="model"><b>Model:</b> Mercedez-Benz CLA 45</h6>
                         <h6 class="summa"><b>Price:</b> 50.000.000 USD</h6>
                         <h6 class="ReleaseDate"><b>Release Date:</b> 02/09/2020</h6>
                         <h6 class="colors"><b>Colors:</b> Black, White, Yellow, Grey</h6>
@@ -185,7 +161,7 @@
                         <img src="./imags/cars_imag/2.jpg" alt="" width="100%" height="100%">
                     </div>
                     <div class="card-body">
-                        <h6 class=""><b>Model:</b> Mercedez-Benz EQA 250</h6>
+                        <h6 class="model"><b>Model:</b> Mercedez-Benz EQA 250</h6>
                         <h6 class="summa"><b>Price:</b> 50.000.000 USD</h6>
                         <h6 class="ReleaseDate"><b>Release Date:</b> 02/09/2020</h6>
                         <h6 class="colors"><b>Colors:</b> Black, White, Yellow, Grey</h6>
@@ -198,7 +174,7 @@
                         <img src="./imags/cars_imag/3.jpg" alt="" width="100%" height="100%">
                     </div>
                     <div class="card-body">
-                        <h6 class=""><b>Model:</b> Mercedez-Benz V12</h6>
+                        <h6 class="model"><b>Model:</b> Mercedez-Benz V12</h6>
                         <h6 class="summa"><b>Price:</b> 50.000.000 USD</h6>
                         <h6 class="ReleaseDate"><b>Release Date:</b> 02/09/2020</h6>
                         <h6 class="colors"><b>Colors:</b> Black, White, Yellow, Grey</h6>
@@ -211,7 +187,7 @@
                         <img src="./imags/cars_imag/1.png" alt="" width="100%" height="100%">
                     </div>
                     <div class="card-body">
-                        <h6 class=""><b>Model:</b> Mercedez-Benz CLA 45</h6>
+                        <h6 class="model"><b>Model:</b> Mercedez-Benz CLA 45</h6>
                         <h6 class="summa"><b>Price:</b> 50.000.000 USD</h6>
                         <h6 class="ReleaseDate"><b>Release Date:</b> 02/09/2020</h6>
                         <h6 class="colors"><b>Colors:</b> Black, White, Yellow, Grey</h6>
@@ -224,7 +200,7 @@
                         <img src="./imags/cars_imag/2.jpg" alt="" width="100%" height="100%">
                     </div>
                     <div class="card-body">
-                        <h6 class=""><b>Model:</b> Mercedez-Benz EQA 250</h6>
+                        <h6 class="model"><b>Model:</b> Mercedez-Benz EQA 250</h6>
                         <h6 class="summa"><b>Price:</b> 50.000.000 USD</h6>
                         <h6 class="ReleaseDate"><b>Release Date:</b> 02/09/2020</h6>
                         <h6 class="colors"><b>Colors:</b> Black, White, Yellow, Grey</h6>
@@ -237,7 +213,7 @@
                         <img src="./imags/cars_imag/4.jpg" alt="" width="100%" height="100%">
                     </div>
                     <div class="card-body">
-                        <h6 class=""><b>Model:</b> Mercedez-Benz W223</h6>
+                        <h6 class="model"><b>Model:</b> Mercedez-Benz W223</h6>
                         <h6 class="summa"><b>Price:</b> 50.000.000 USD</h6>
                         <h6 class="ReleaseDate"><b>Release Date:</b> 02/09/2020</h6>
                         <h6 class="colors"><b>Colors:</b> Black, White, Yellow, Grey</h6>
@@ -247,8 +223,8 @@
         </div>
     </div>
     <footer class="footer">
-        <div class="footer-bottom bg-dark fixed-bottom b-0 l-0">
-            <p class="text-center text-light">
+        <div class="footer-bottom bg-dark fixed-bottom b-0 l-0 ">
+            <p class="text-center text-light mt-3 fs-5">
                 Mercedez-Benz
             </p>
         </div>
@@ -259,7 +235,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
         integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
         crossorigin="anonymous"></script>
-
+    <script src="./js/filter.js"></script>
 </body>
 
 </html>
