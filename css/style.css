@@ -7,7 +7,12 @@ body{
     width: 100vw;
     height: 100vh;
 }
-
+#hero-bg{
+    width: 100vw;
+    height: 100vh;
+    background-position: center !important;
+    background-size: cover !important;
+}
 .card.hide {
     display: none !important;
 }

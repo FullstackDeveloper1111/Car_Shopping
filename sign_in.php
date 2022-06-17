@@ -1,3 +1,6 @@
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -16,7 +19,7 @@
 
 <body style="overflow: hidden;">
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
             <div class="container">
                 <a class="navbar-brand text-light" href="#"><img src="imags/merc-logo/изображение-removebg-preview.png"
                         alt="" width="100"></a>
@@ -45,7 +48,7 @@
                             <a href="#" class="nav-link text-danger"><i class="fa-solid fa-heart"></i></a>
                         </li>
                     </ul>
-                    <a href="sign_in.html" class="btn btn-primary rounded-pill active">Sign up</a>
+                    <a href="sign_in.html" name="submit" class="btn btn-primary rounded-pill active">Sign in</a>
                 </div>
             </div>
         </nav>
@@ -55,33 +58,24 @@
             <div class="row mt-5">
                 <div class="col-4"></div>
                 <div class="col-4">
-                    <div class="card pt-5 mt-5">
-                        <div class="card-head">
-                            <form action="./sign_up.php" method="post">
+                    <div class="form-container mt-5 pt-5">
+                            <form>
                                 <div class="mb-3">
-                                  <input type="text" class="form-control mb-4" id="username" name="username" placeholder="Enter usernmae...">
+                                  <input type="text" class="form-control mb-4" id="usernmae" aria-describedby="emailHelp" require="" placeholder="Enter your usernmae...">
                                 </div>
                                 <div class="mb-3">
-                                  <input type="email" class="form-control my-3" id="email"  name="email" placeholder="Enter email...">
+                                  <input type="password" class="form-control my-3" id="password" require="" placeholder="Enter your password...">
+                                  <p>Don't have an account?<a href="sign_up.php" class="text-decoration-none mx-2">Register now</a></p>
                                 </div>
-                                <div class="mb-3">
-                                    <input type="password" class="form-control mb-4" id="password" name="password" placeholder="Enter password...">
-                                  </div>
-                                  <div class="mb-3">
-                                    <input type="password" class="form-control my-3" id="confirmPassword" placeholder="Enter confirmPassword...">
-                                    <a href="sign_in.html" class="text-decoration-none">Sign in</a>
-                                  </div>
-                                <button type="submit" class="btn btn-primary col-md-12">Sign up</button>
+                                <button type="submit" class="btn btn-primary col-md-12">Sign in</button>
                               </form>
                         </div>
-                        <div class="card-body"></div>
                     </div>
-                </div>
                 <div class="col-4"></div>
     
             </div>
         </div>
-    </section> 
+    </section>
     <footer class="footer">
         <div class="footer-bottom bg-dark fixed-bottom b-0 l-0 ">
             <p class="text-center text-light mt-3 fs-5">
